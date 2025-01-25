@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Erlich | work@arthuerlich.de">
+    <meta name="description" content="">
+    <title>Colors</title>
+</head>
+
+<body>
+    <style>
+        .color,
+        .gradient {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        .color {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gradient {
+            height: 25px;
+            width: calc(25px * 3);
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+    <h2>Colors</h2>
+    <section style="display: flex; gap: 20px;">
+        <div>
+            <div class="color" style="background-color: #d3b3ca;"></div>
+            Main
+        </div>
+        <div>
+            <div class="color" style="background-color: #898c53;"></div>
+            Third
+        </div>
+        <div>
+            <div class="color" style="background-color: #afbc53;"></div>
+            Second
+        </div>
+        <div>
+            <div class="color" style="background-color: #cbde4d;"></div>
+            Fourth
+        </div>
+        <div>
+            <div class="gradient" style="background:linear-gradient(90deg, #898c53 0%, #cbde4d 100%);"></div>
+            Gradient?
+        </div>
+        <div>
+            <div class="gradient" style="background:linear-gradient(90deg, #cbde4d 0%, #ffffff 100%);"></div>
+            Gradient?
+        </div>
+        <div>
+            <div class="gradient" style="background:linear-gradient(90deg, #898c53 0%, #ffffff 100%);"></div>
+            Gradient?
+        </div>
+    </section>
+    <section>
+        <h2>Text</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </section>
+
+</body>
+
+</html>
