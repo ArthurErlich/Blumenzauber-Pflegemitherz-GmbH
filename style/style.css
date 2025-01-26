@@ -7,25 +7,9 @@ body {
     margin: 0px 0px 0px 0px;
 }
 
-#nav_background_row {
-    height: 10vh;
-    background-color: lightgray;
-    /* position: sticky;
-    top: 0;
-    z-index: 90; */
-}
-
-#hero_container {
-    height: 90vh;
-    background-color: grey;
-}
-
-#nav_row {
-    height: 10vh;
-    background-color: lightgray;
-    /* position: sticky;
-    top: 0;
-    z-index: 100; */
+nav>ul>li{
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
 }
 
 #business_card {
