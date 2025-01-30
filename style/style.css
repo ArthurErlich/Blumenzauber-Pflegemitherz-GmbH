@@ -1,18 +1,66 @@
 :root {
-    --main-color: black;
-    --second-color: grey;
+    --main-color: #d3b3ca;
+    --second-color: #afbc53;
+    --third-color: #898c53;
+    --forth-color: #cbde4d;
 }
 
 body {
     margin: 0px 0px 0px 0px;
+    background-color: var(--second-color);
+
+}
+main{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-nav>ul>li{
-    display: inline-block;
-    margin: 0px 5px 0px 5px;
+/* Navigation */
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--third-color);
+
 }
+
+nav>ul {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav>ul>li {
+    display: inline-block;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* End Navigation */
 
 #business_card {
-    height: 100vh;
-    background-color: darkgray;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#business_card > h1{
+    
+    font-size: 2em;
+}
+.info_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.info_box > *{
+    width: 250px;
 }
