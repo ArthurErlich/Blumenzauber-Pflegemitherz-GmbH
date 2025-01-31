@@ -7,22 +7,31 @@
 
 body {
     margin: 0px 0px 0px 0px;
-    background-color: var(--second-color);
+    /* background-color: var(--second-color); */
+    overflow-x: hidden;
 
 }
-main{
+
+main {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    /* fixes layout shift of the scroolbar */
+    padding-left: calc(100vw - 100%);
 }
 
 /* Navigation */
-nav {
+header {
     height: 10vh;
+    width: 100vw;
+}
+
+nav {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--third-color);
-
+    height: 50px;
 }
 
 nav>ul {
@@ -30,13 +39,16 @@ nav>ul {
     margin: 0;
     display: flex;
     justify-content: space-around;
+    max-width: 1920px;
+    padding: 0;
 }
 
 nav>ul>li {
     display: inline-block;
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
@@ -50,17 +62,20 @@ a{
     justify-content: center;
     flex-wrap: wrap;
 }
-#business_card > h1{
-    
+
+#business_card>h1 {
+    text-align: center;
     font-size: 2em;
 }
-.info_box{
+
+.info_box {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
 }
-.info_box > *{
+
+.info_box>* {
     width: 250px;
 }
