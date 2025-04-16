@@ -1,34 +1,161 @@
 :root {
-    --main-color: black;
-    --second-color: grey;
+    --main-color: #d3b3ca;
+    --second-color: #afbc53;
+    --third-color: #898c53;
+    --forth-color: #cbde4d;
 }
+
+
+/* Prepreation for custom font */
+/* @font-face {
+    font-family: "";
+    src: url();
+} */
+
+
 
 body {
     margin: 0px 0px 0px 0px;
+    /* background-color: var(--second-color); */
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
 }
 
-#nav_background_row {
+
+main {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    /* fixes layout shift of the scroolbar */
+    padding-left: calc(100vw - 100%);
+}
+
+.card a {
+    color: black;
+}
+
+.card a:hover {
+    /* color: var(--forth-color); */
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    background-color: white;
+}
+
+/* Navigation */
+header {
     height: 10vh;
-    background-color: lightgray;
-    /* position: sticky;
-    top: 0;
-    z-index: 90; */
+    width: 100vw;
 }
 
-#hero_container {
-    height: 90vh;
-    background-color: grey;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third-color);
+    height: 50px;
 }
 
-#nav_row {
-    height: 10vh;
-    background-color: lightgray;
-    /* position: sticky;
-    top: 0;
-    z-index: 100; */
+nav>ul {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1920px;
+    padding: 0;
 }
+
+nav>ul>li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: underline rgba(255, 255, 255, 0);
+    color: white;
+    transition: text-decoration-color .3s ease-in-out
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.legal_text {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 800px;
+}
+
+/* End Navigation */
 
 #business_card {
-    height: 100vh;
-    background-color: darkgray;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#business_card>h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#mobile_breake {
+    display: none;
+}
+
+.info_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.info_box>* {
+    width: 350px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: var(--second-color);
+    box-shadow: 10px 5px var(--main-color);
+
+    margin-top: 20px;
+    height: 110px;
+    padding: 10px;
+}
+
+.card>h3 {
+    margin-top: 0;
+}
+
+.card>* {
+    margin-bottom: 5px;
+}
+
+/* mobile changes */
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12pt;
+    }
+
+    .info_box>* {
+        width: 300px;
+    }
+
+    #mobile_breake {
+        display: block;
+    }
+
+
 }
