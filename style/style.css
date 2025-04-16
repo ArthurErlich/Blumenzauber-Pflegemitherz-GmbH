@@ -5,8 +5,9 @@
     --forth-color: #cbde4d;
 }
 
-/* 
-@font-face {
+
+/* Prepreation for custom font */
+/* @font-face {
     font-family: "";
     src: url();
 } */
@@ -15,6 +16,7 @@ body {
     margin: 0px 0px 0px 0px;
     /* background-color: var(--second-color); */
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -24,6 +26,17 @@ main {
     margin-right: auto;
     /* fixes layout shift of the scroolbar */
     padding-left: calc(100vw - 100%);
+}
+
+.card a {
+    color: black;
+}
+
+.card a:hover {
+    /* color: var(--forth-color); */
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    background-color: white;
 }
 
 /* Navigation */
@@ -55,8 +68,20 @@ nav>ul>li {
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: underline rgba(255, 255, 255, 0);
     color: white;
+    transition: text-decoration-color .3s ease-in-out
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 800px;
 }
 
 /* End Navigation */
@@ -84,4 +109,27 @@ nav a {
 
 .info_box>* {
     width: 300px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: var(--second-color);
+    box-shadow: 10px 5px var(--main-color);
+
+    margin-top: 20px;
+    height: 110px;
+    padding: 10px;
+}
+
+.card>h3 {
+    margin-top: 0;
+}
+
+.card>* {
+    margin-bottom: 5px;
 }
