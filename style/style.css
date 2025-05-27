@@ -3,6 +3,7 @@
     --second-color: #afbc53;
     --third-color: #898c53;
     --forth-color: #cbde4d;
+    --background-color: white;
 }
 
 
@@ -16,7 +17,11 @@
 
 body {
     margin: 0px 0px 0px 0px;
-    /* background-color: var(--second-color); */
+    background-color: var(--background-color);
+    background-image: url("/images/Hintergrund.svg");
+    background-repeat: no-repeat;
+    background-position-y: 32%;
+    background-position-x: center;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13pt;
@@ -147,6 +152,7 @@ nav a:hover {
 @media only screen and (max-width: 600px) {
     body {
         font-size: 12pt;
+        background-position-y: 10%;
     }
 
     .info_box>* {
